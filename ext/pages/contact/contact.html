@@ -1,0 +1,42 @@
+<!-- ext/contact/contact.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../../node_modules/tailwindcss/dist/tailwind.min.css">
+  <link rel="stylesheet" href="../../node_modules/daisyui/dist/full.css">
+  <link rel="stylesheet" href="../../styles/contact.css">
+</head>
+<body class="dark:bg-gray-800">
+  <div class="p-4">
+    <h2 class="text-xl font-bold mb-4 dark:text-white">Contact Us</h2>
+    <form id="contact-form">
+      <div class="form-control">
+        <label class="label">
+          <span class="label-text dark:text-white">Name</span>
+        </label>
+        <input type="text" id="name" class="input input-bordered dark:bg-gray-700 dark:text-white" required>
+     </div>
+     <div class="form-control">
+       <label class="label">
+         <span class="label-text dark:text-white">Email</span>
+       </label>
+       <input type="email" id="email" class="input input-bordered dark:bg-gray-700 dark:text-white" required>
+     </div>
+     <div class="form-control">
+       <label class="label">
+         <span class="label-text dark:text-white">Subject</span>
+       </label>
+       <input type="text" id="subject" class="input input-bordered dark:bg-gray-700 dark:text-white" required>
+     </div>
+     <div class="form-control">
+       <label class="label">
+         <span class="label-text dark:text-white">Message</span>
+       </label>
+       <textarea id="message" class="textarea textarea-bordered dark:bg-gray-700 dark:text-white" required></textarea>
+     </div>
+     <button type="submit" class="btn btn-primary mt-4">Send</button>
+   </form>
+ </div>
+ <script src="../../scripts/contact.js"></script>
+</body>
+</html>

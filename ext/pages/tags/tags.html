@@ -1,0 +1,25 @@
+<!-- ext/pages/tags.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../../node_modules/tailwindcss/dist/tailwind.min.css">
+  <link rel="stylesheet" href="../../node_modules/daisyui/dist/full.css">
+  <link rel="stylesheet" href="../../styles/tags.css">
+</head>
+<body class="dark:bg-gray-800">
+  <div class="p-4">
+    <h2 class="text-xl font-bold mb-4 dark:text-white">Tag Management</h2>
+    <div id="tag-list" class="mb-4"></div>
+    <form id="create-tag-form">
+      <div class="form-control">
+        <label class="label">
+          <span class="label-text dark:text-white">Tag Name</span>
+        </label>
+        <input type="text" id="tag-name-input" class="input input-bordered dark:bg-gray-700 dark:text-white" placeholder="Enter tag name" required>
+      </div>
+      <button type="submit" class="btn btn-primary mt-4">Create Tag</button>
+    </form>
+  </div>
+  <script src="../../scripts/tags.js"></script>
+</body>
+</html>

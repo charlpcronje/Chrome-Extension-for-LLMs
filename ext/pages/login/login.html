@@ -1,0 +1,30 @@
+<!-- ext/pages/login.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../../node_modules/tailwindcss/dist/tailwind.min.css">
+  <link rel="stylesheet" href="../../node_modules/daisyui/dist/full.css">
+  <link rel="stylesheet" href="../../styles/login.css">
+</head>
+<body class="dark:bg-gray-800">
+  <div class="p-4">
+    <h2 class="text-xl font-bold mb-4 dark:text-white">Login</h2>
+    <form id="login-form">
+      <div class="form-control">
+        <label class="label">
+          <span class="label-text dark:text-white">Username</span>
+        </label>
+        <input type="text" id="username" class="input input-bordered dark:bg-gray-700 dark:text-white" required>
+      </div>
+      <div class="form-control">
+        <label class="label">
+          <span class="label-text dark:text-white">Password</span>
+        </label>
+        <input type="password" id="password" class="input input-bordered dark:bg-gray-700 dark:text-white" required>
+      </div>
+      <button type="submit" class="btn btn-primary mt-4">Login</button>
+    </form>
+  </div>
+  <script src="../../scripts/login.js"></script>
+</body>
+</html>

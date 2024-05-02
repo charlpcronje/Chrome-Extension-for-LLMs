@@ -1,0 +1,25 @@
+<!-- ext/pages/folders.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../../node_modules/tailwindcss/dist/tailwind.min.css">
+  <link rel="stylesheet" href="../../node_modules/daisyui/dist/full.css">
+  <link rel="stylesheet" href="../../styles/folders.css">
+</head>
+<body class="dark:bg-gray-800">
+  <div class="p-4">
+    <h2 class="text-xl font-bold mb-4 dark:text-white">Folder Management</h2>
+    <div id="folder-tree" class="mb-4"></div>
+    <form id="create-folder-form">
+      <div class="form-control">
+        <label class="label">
+          <span class="label-text dark:text-white">Folder Name</span>
+        </label>
+        <input type="text" id="folder-name-input" class="input input-bordered dark:bg-gray-700 dark:text-white" placeholder="Enter folder name" required>
+      </div>
+      <button type="submit" class="btn btn-primary mt-4">Create Folder</button>
+    </form>
+  </div>
+  <script src="../../scripts/folders.js"></script>
+</body>
+</html>
