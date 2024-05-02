@@ -1,0 +1,76 @@
+{
+    "manifest_version": 3,
+    "name": "ChatGPT Chat Manager",
+    "version": "1.0.0",
+    "description": "A Chrome extension for managing ChatGPT chats, folders, and tags.",
+    "permissions": ["storage", "activeTab"],
+    "host_permissions": [
+        "https://openai.com/*",
+        "https://*.openai.com/*",
+        "https://claude.ai/*",
+        "https://*.claude.ai/*",
+        "https://llm.chat.manager.webally.co.za/*"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup/popup.html"
+    },
+    "options_page": "options/options.html",
+    "icons": {
+        "16": "assets/icon16.png",
+        "48": "assets/icon48.png",
+        "128": "assets/icon128.png"
+    },
+    "commands": {
+        "open-sidebar": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+S"
+            },
+            "description": "Open Sidebar"
+        },
+        "show-folders": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+F"
+            },
+            "description": "Show Folders"
+        },
+        "add-chat-to-folder": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+A"
+            },
+            "description": "Add Chat to Folder"
+        },
+        "add-chat-to-tag": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+T"
+            },
+            "description": "Add Chat to Tag"
+        },
+        "delete-chat-from-folder": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+D"
+            },
+            "description": "Delete Chat from Folder"
+        },
+        "move-chat": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+M"
+            },
+            "description": "Move Chat"
+        },
+        "select-chats": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+C"
+            },
+            "description": "Select Chats"
+        },
+        "sync-folders-tags": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+Y"
+            },
+            "description": "Sync Folders and Tags"
+        }
+    }
+}
