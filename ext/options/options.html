@@ -1,0 +1,24 @@
+<!-- ext/options/options.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../node_modules/tailwindcss/dist/tailwind.min.css">
+  <link rel="stylesheet" href="../node_modules/daisyui/dist/full.css">
+  <link rel="stylesheet" href="../styles/options.css">
+</head>
+<body class="dark:bg-gray-800">
+  <div class="p-4">
+    <h1 class="text-2xl font-bold mb-4 dark:text-white">ChatGPT Chat Manager Extension Options</h1>
+    <div class="mb-4">
+      <label for="api-url" class="block mb-2 dark:text-white">API URL:</label>
+      <input type="text" id="api-url" class="input input-bordered w-full dark:bg-gray-700 dark:text-white" placeholder="Enter API URL">
+    </div>
+    <div class="mb-4">
+      <label for="sync-interval" class="block mb-2 dark:text-white">Sync Interval (in minutes):</label>
+      <input type="number" id="sync-interval" class="input input-bordered w-full dark:bg-gray-700 dark:text-white" placeholder="Enter sync interval">
+    </div>
+    <button class="btn btn-primary" id="save-options-btn">Save Options</button>
+  </div>
+  <script src="../scripts/options.js"></script>
+</body>
+</html>
