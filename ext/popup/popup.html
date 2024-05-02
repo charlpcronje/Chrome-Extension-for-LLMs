@@ -1,0 +1,26 @@
+<!-- ext/popup/popup.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../node_modules/tailwindcss/dist/tailwind.min.css">
+  <link rel="stylesheet" href="../node_modules/daisyui/dist/full.css">
+  <link rel="stylesheet" href="../styles/popup.css">
+  <script src="../node_modules/htmx.org/dist/htmx.min.js"></script>
+</head>
+<body class="bg-gray-100 dark:bg-gray-800">
+  <div class="container mx-auto p-4">
+    <h1 class="text-2xl font-bold mb-4 dark:text-white">ChatGPT Chat Manager</h1>
+    <div class="mb-4">
+      <a href="#" class="btn btn-primary" hx-get="../pages/folders/folders.html" hx-target="#content">Folders</a>
+      <a href="#" class="btn btn-primary" hx-get="../pages/tags/tags.html" hx-target="#content">Tags</a>
+      <a href="#" class="btn btn-primary" hx-get="../pages/sync/sync.html" hx-target="#content">Sync</a>
+      <a href="#" class="btn btn-primary" hx-get="../pages/users/profile.html" hx-target="#content">Profile</a>
+      <a href="#" class="btn btn-primary" hx-get="../pages/docs/docs.html" hx-target="#content">Documentation</a>
+      <a href="#" class="btn btn-primary" hx-get="../pages/contact/contact.html" hx-target="#content">Contact Us</a>
+    </div>
+    <div id="content" class="dark:text-white"></div>
+  </div>
+  <script src="../scripts/theme.js"></script>
+  <script src="../scripts/popup.js"></script>
+</body>
+</html>
