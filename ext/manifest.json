@@ -30,12 +30,6 @@
             },
             "description": "Open Sidebar"
         },
-        "show-folders": {
-            "suggested_key": {
-                "default": "Ctrl+Shift+F"
-            },
-            "description": "Show Folders"
-        },
         "add-chat-to-folder": {
             "suggested_key": {
                 "default": "Ctrl+Shift+A"
@@ -47,24 +41,6 @@
                 "default": "Ctrl+Shift+T"
             },
             "description": "Add Chat to Tag"
-        },
-        "delete-chat-from-folder": {
-            "suggested_key": {
-                "default": "Ctrl+Shift+D"
-            },
-            "description": "Delete Chat from Folder"
-        },
-        "move-chat": {
-            "suggested_key": {
-                "default": "Ctrl+Shift+M"
-            },
-            "description": "Move Chat"
-        },
-        "select-chats": {
-            "suggested_key": {
-                "default": "Ctrl+Shift+C"
-            },
-            "description": "Select Chats"
         },
         "sync-folders-tags": {
             "suggested_key": {

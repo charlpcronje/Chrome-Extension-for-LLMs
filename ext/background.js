@@ -414,18 +414,10 @@ function syncData() {
 chrome.commands.onCommand.addListener((command) => {
     if (command === "open-sidebar") {
         // Open the sidebar
-    } else if (command === "show-folders") {
-        // Show folders
     } else if (command === "add-chat-to-folder") {
         // Add chat to folder
     } else if (command === "add-chat-to-tag") {
         // Add chat to tag
-    } else if (command === "delete-chat-from-folder") {
-        // Delete chat from folder
-    } else if (command === "move-chat") {
-        // Move chat
-    } else if (command === "select-chats") {
-        // Select chats
     } else if (command === "sync-folders-tags") {
         // Sync folders and tags
     }
