@@ -22,7 +22,7 @@ This repository contains the Chrome extension for the ChatGPT Chat Manager appli
 4. Load the extension in Chrome:
    - Open Google Chrome and navigate to `chrome://extensions`.
    - Enable "Developer mode" using the toggle switch in the top right corner.
-   - Click on "Load unpacked" and select the `chrome-extension` directory.
+   - Click on "Load unpacked" and select the `ext` directory.
 
 5. Configure the extension:
    - Click on the extension icon in the Chrome toolbar to open the popup.
@@ -47,8 +47,8 @@ To deploy the extension to the Chrome Web Store, follow these steps:
 1. Create a developer account on the Chrome Web Store if you don't have one already.
 2. Prepare the extension for publishing:
    - Update the `manifest.json` file with the appropriate version number and description.
-   - Ensure that all the necessary files are included in the `chrome-extension` directory.
-3. Create a ZIP file of the `chrome-extension` directory.
+   - Ensure that all the necessary files are included in the `ext` directory.
+3. Create a ZIP file of the `ext` directory.
 4. Go to the Chrome Web Store Developer Dashboard.
 5. Click on "Add New Item" and upload the ZIP file of your extension.
 6. Fill in the required information, such as the extension name, description, screenshots, and promotional images.
